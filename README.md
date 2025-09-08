@@ -46,7 +46,11 @@ This is an easy-to-use executable application for photographers and content crea
 If you find this app helpful, please consider supporting the developer:
 
 - Visit Facebook: [facebook.com/bibhutithecoolboy](https://facebook.com/bibhutithecoolboy)
-- Donations help us improve and build more tools for photography professionals.
+- Donations help us improve and build more tools for photography professionals.  
+  Please scan the QR code below to donate any amount.
+
+<p align="center"> <img src="payment_qr_code.png" alt="Donate QR Code" /> </p>
+
 
 Thank you for your support!
 
