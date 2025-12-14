@@ -1,46 +1,51 @@
-# File Sorter
+# File Sorter v3.0.0.0
 
-A user-friendly application to efficiently sort all types of files from a source folder into a destination folder based on a list of filenames provided in an Excel or CSV file.
-
----
+This application provides a simple yet powerful solution for organizing files by matching their names against an Excel or CSV spreadsheet. It streamlines your workflow by copying or moving files into a designated output folder, making your file collection easily manageable.
 
 ## Features
 
-- **Flexible Input:** Select your list of target files using either an Excel (`.xlsx`) or a CSV (`.csv`) file.
-- **Copy or Move:** Choose to either **Copy** the files to the destination or **Move** them permanently.
-- **Sorts All Related Files:** If your spreadsheet lists `photo-001.jpg`, the app will find and process `photo-001.jpg`, `photo-001.xmp`, `photo-001.raw`, and any other file that shares the `photo-001` base name.
-- **Smart Output Folder:** You can specify a custom output folder. If you don't, a `Sorted_Images` folder will be created inside the source image folder automatically.
-- **Responsive UI:** The interface remains responsive during long operations thanks to background processing.
-- **Progress Tracking:** A real-time progress bar and status text keep you informed of the sorting process.
-- **Cancel Operation:** A "Cancel" button allows you to stop the file sorting process at any time.
-- **Drag and Drop:** Easily drag and drop your spreadsheet, source folder, and output folder into the respective fields.
-
----
+-   **Spreadsheet-Driven Sorting**: Automatically identifies and sorts files based on filenames listed in an Excel (`.xlsx`) or CSV (`.csv`) file.
+-   **Flexible Operations**: Choose to either `Copy` the matched files to a new destination, or `Move` them (cutting them from the source and pasting to the destination).
+-   **Drag-and-Drop Support**: Conveniently select your Excel/CSV file, source folder, and output folder using drag-and-drop functionality directly onto the respective input fields.
+-   **User-Friendly Interface**: A straightforward graphical user interface (GUI) allows for easy selection of input files and folders, and initiation of the sorting process.
+-   **Progress Tracking & Cancellation**: Provides real-time progress updates during sorting and allows you to cancel an ongoing operation.
+-   **Error Handling**: Offers clear feedback on sorting progress and any encountered issues.
 
 ## How to Use
 
-1.  **Run the application:**
-    ```bash
-    python raw_image_sorter_v3.py
-    ```
-2.  **Select Spreadsheet:** Click "Browse" or drag and drop your `.xlsx` or `.csv` file. The file should contain the base names of the files you want to sort in the first column (e.g., `photo-001`, `photo-002.jpg`, etc.).
-3.  **Select Image Folder:** Click "Browse" or drag and drop the main source folder that contains all the files you want to sort through.
-4.  **Select Output Folder (Optional):** Click "Browse" or drag and drop a folder where you want the sorted files to go. If left empty, a `Sorted_Images` folder will be created inside the Image Folder.
-5.  **Choose Operation Mode:** Select either "Copy" or "Move" from the dropdown menu.
-    - **Copy:** Makes a duplicate of the matching files in the output folder.
-    - **Move:** Transfers the matching files from the source to the output folder.
-6.  **Sort Files:** Click the "Sort Files" button to begin.
-7.  **Monitor or Cancel:** Watch the progress bar. If you need to stop the process, click the "Cancel" button.
+1.  **Download the Executable**: Obtain the latest `file_sorter_v3.exe` file from the release page or your provided source.
+2.  **Launch the Application**: Double-click on the `.exe` file to install the program.
+3.  **Select Excel/CSV File**:
+    *   Click the "Browse" button next to the "Select Excel/CSV File" field, OR
+    *   Drag and drop your `.xlsx` or `.csv` file directly onto the input field or the "Drop Excel/CSV File Here" label. This file should contain the names of the files you want to sort, typically one filename per row in the first column.
+4.  **Select Image Folder (Source)**:
+    *   Click the "Browse" button next to the "Select Image Folder" field, OR
+    *   Drag and drop the folder containing the files you wish to sort directly onto the input field or the "Drop Image Folder Here" label.
+5.  **Select Output Folder (Destination)**:
+    *   Click the "Browse" button next to the "Select Output Folder" field, OR
+    *   Drag and drop your desired destination folder directly onto the input field or the "Drop Output Folder Here" label. This is where the sorted files will be placed.
+6.  **Choose Operation Mode**: From the dropdown menu, select whether you want to "Copy" the files (keeping originals) or "Move" them (removing originals from the source).
+7.  **Start Sorting**: Once all selections are made, click the "Sort Files" button to begin the automated sorting process. A progress bar and status messages will keep you informed.
+8.  **Cancel Sorting**: If needed, click the "Cancel" button to stop the sorting process prematurely.
 
----
+## Requirements
 
-## Credits & Support
+-   **Operating System**: Windows 10 or newer.
+-   The application is provided as a standalone executable, so no additional software installations (like Python runtime) are required.
 
-- **Created by Bibhuti**
-- For custom tools or support, contact via Facebook: [facebook.com/bibhutithecoolboy](https://facebook.com/bibhutithecoolboy)
+## Credits
 
-If you find this app helpful, please consider showing your support by donating.
+-   **Developer**: Bibhuti
+-   **Contact**: [Facebook.com/bibhutithecoolboy](https://www.facebook.com/bibhutithecoolboy)
 
-<p align="center">
-  <img src="payment_qr_code.png" alt="Donate QR Code" />
-</p>
+## Support & Questions
+
+If you encounter any bugs, have suggestions for new features, or just have questions about using the File Sorter, please don't hesitate to reach out to Bibhuti via the contact details provided in the Credits section.
+
+## Donation
+
+If you find this tool useful and would like to support its development, any donation would be greatly appreciated! Your contributions help in maintaining and improving this project.
+
+To donate, please use the "Donate Now" button within the application to view the QR code for payment. For more details or alternative donation methods, please contact Bibhuti directly via the Facebook page mentioned in the Credits section.
+
+Thank you for your support!
