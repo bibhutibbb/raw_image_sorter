@@ -1,5 +1,8 @@
-/build
-/dist
-/info
-/releases
+# Ignore following folders and files
+build/
+dist/
+info/
+releases/
+file_sorter/
+.venv/
 *.spec

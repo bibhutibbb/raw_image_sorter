@@ -18,9 +18,10 @@ import csv
 import threading
 
 class FileSorter:
+    __version__ = "3.0.0.0"
     def __init__(self, root):
         self.root = root
-        self.root.title("File Sorter")
+        self.root.title(f"File Sorter v{self.__version__}")
         self.root.configure(bg="#f0f2f5")
         self.root.resizable(True, True)
         self.cancel_event = threading.Event()
