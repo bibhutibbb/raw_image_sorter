@@ -25,9 +25,16 @@ class FileSorter:
         self.root.resizable(True, True)
         self.cancel_event = threading.Event()
         try:
-            self.root.iconbitmap("app_icon.ico")
-        except:
-            pass
+            # Determine base path for resources
+            if getattr(sys, 'frozen', False) and hasattr(sys, '_MEIPASS'):
+                base_path = sys._MEIPASS
+            else:
+                base_path = os.path.dirname(os.path.abspath(__file__))
+            
+            icon_path = os.path.join(base_path, "app_icon.ico")
+            self.root.iconbitmap(icon_path)
+        except Exception as e:
+            print(f"Error setting icon: {e}")
         self.style = ttk.Style()
         self.style.configure("TButton", font=("Arial", 10), padding=5)
         self.style.map("TButton", background=[("active", "#e0e0e0")])
